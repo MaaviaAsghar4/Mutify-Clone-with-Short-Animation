@@ -1,0 +1,94 @@
+.head{
+    text-align: center;
+    position: relative;
+}
+
+.head h1{
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: rgb(14, 13, 13);
+    padding-top: 15px;
+
+}
+
+.head p{
+    color: rgba(40,40,65,.7);
+    font-size: 1.2rem;
+}
+
+.head-dynamic span{
+    color: rgba(40,40,65,.7);
+    font-size: 1.2rem;
+}
+
+.head-btn{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download{
+    margin: 0 20px;
+    color: #fff;
+    border: 2px solid rgba(45,90,210,.8);
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    background: linear-gradient(180deg,#359cff,#0037d2);
+    width: 250px;
+    height: 50px;
+}
+
+.buy{
+    margin: 0 20px;
+    color: black;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    background: linear-gradient(180deg,#fff,#fff 46%,#f3f3f3);
+    width: 250px;
+    height: 50px;   
+}
+
+.head-img {
+    background-image: url('../images/wave1.svg');
+    background-position: left;
+    background-size: cover;
+}
+
+.head-img img{
+    margin-top: 60px;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 50px blue;
+}
+
+/*.bg-img img{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 50%;
+    left: -20%;
+} */
+
+
+
+@media (max-width: 576px) {
+    .buy, .download{
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .head-btn{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .head-img img{
+        width: 400px;
+        height: 400px;
+    }
+}

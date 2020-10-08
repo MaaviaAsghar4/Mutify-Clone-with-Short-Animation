@@ -1,0 +1,68 @@
+.work-container{
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.hangout{
+    position: absolute;
+    left: 20%;
+}
+
+.slack{
+    position: absolute;
+    right: 35%;
+    top: -3%;
+}
+
+.skype {
+    position: absolute;
+    top: -5%;
+    right: 10%;
+}
+
+.viber{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+}
+
+.zoom{
+    position: absolute;
+    left: 30%;
+    top: 5%;
+}
+
+.meeting{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.telegram{
+    position: absolute;
+    left: -3%;
+    top: 30%;
+}
+
+.messenger{
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+
+.webex{
+    position: absolute;
+    left: 3%;
+    top: 8%;
+}
+
+.appear{
+    position: absolute;
+    right: -3%;
+    top: 30%; 
+}
+
+.opacity{
+    filter: blur(15px);
+}
