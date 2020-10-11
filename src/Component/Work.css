@@ -1,68 +1,145 @@
+.opacity{
+    filter: blur(20px);
+}
+
 .work-container{
-    position: relative;
     margin-top: 200px;
-    text-align: center;
 }
 
-.hangout{
-    position: absolute;
-    left: 20%;
-}
-
-.slack{
-    position: absolute;
-    right: 35%;
-    top: -3%;
-}
-
-.skype {
-    position: absolute;
-    top: -5%;
-    right: 10%;
-}
-
-.viber{
-    position: absolute;
-    left: 5%;
-    top: 20%;
-}
-
-.zoom{
-    position: absolute;
-    left: 30%;
-    top: 5%;
-}
-
-.meeting{
-    position: absolute;
-    right: 10%;
-    top: 10%;
-}
-
-.telegram{
-    position: absolute;
-    left: -3%;
-    top: 30%;
-}
-
-.messenger{
-    position: absolute;
-    right: 5%;
-    top: 20%;
-}
-
-.webex{
-    position: absolute;
-    left: 3%;
-    top: 8%;
+.logos-container{
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .appear{
     position: absolute;
+    top: 130%;
     right: -3%;
-    top: 30%; 
 }
 
-.opacity{
-    filter: blur(15px);
+.zoom{
+    position: absolute;
+    top: 20%;
+    right: 50%;
+}
+
+.hangout{
+    position: absolute;
+    top: -20%;
+    left: 20%;
+}
+
+.messenger{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+}
+
+.skype{
+    position: absolute;
+    top: -40%;
+    right: 10%;
+}
+
+.slack{
+    position: absolute;
+    top: -20%;
+    right: 30%;
+}
+
+.telegram{
+    position: absolute;
+    top: 130%;
+    left: -3%;
+}
+
+.viber{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+}
+
+.webex{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.meeting{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+}
+
+.vib{
+    position: absolute;
+    top: -50%;
+    left: 5%;
+}
+
+.slk{
+    position: absolute;
+    top: -30%;
+    right: 50%;
+}
+
+.work-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-content h1{
+    font-size: 1.8rem;
+    margin-top: 65px;
+    margin-bottom: 0;
+}
+
+.work-content h3{
+    color: rgba(40,40,65,.7);;
+}
+
+.work-content img{
+    border-radius: 0.5rem;
+    box-shadow: 0 0 40px blue;
+}
+
+.work-use{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.work-use img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.magnifier{
+    position: absolute;
+    width: 180px !important;
+    right: 00%;
+    left: 40%;
+    top: 3%;
+}
+
+.work-context{
+    margin-top: 40px;
+}
+
+.work-context p{
+    text-align: center;
+    color: rgba(40,40,65,.7);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .magnifier{
+        top: 0;
+        width: 130px !important;
+    }
 }

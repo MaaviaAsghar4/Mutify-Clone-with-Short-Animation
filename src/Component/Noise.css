@@ -1,0 +1,28 @@
+.img-block{
+    margin-top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid rgba(16, 30, 57, 1);
+    border-radius: 1rem;
+    background-color: rgba(16, 30, 57, 1);
+}
+
+.img-context{
+    width: 130%;
+    padding: 0px 30px;
+    color: white;
+}
+
+
+.img-context p{
+    line-height: 2;
+    color: hsl(223deg, 13%, 79%) !important;
+    font-size: 1.2rem;
+}
+
+.img-wave img{
+    margin-left: 40px;
+}

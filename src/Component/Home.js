@@ -2,6 +2,7 @@ import React from 'react'
 import Main from './Main'
 import Navbar from './Navbar'
 import Works from './Works'
+import Noise from './Noise'
 import './Home.css'
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Navbar />
             <Main />
             <Works />
+            <Noise />
         </div>
     )
 }

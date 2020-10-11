@@ -30,8 +30,6 @@ const Works = () => {
                 <img className='meeting' src={Meetings} alt='' />
                 <img className='opacity vib' src={viber} alt='' />
                 <img className='opacity slk' src={slack} alt='' />
-                <img className='opacity zm' src={zoom} alt='' />
-                <img className='opacity tgm' src={telegram} alt='' />
             </div>
             <div className='work-content'>
                 <h1>Control Your Microphone anywhere</h1>
