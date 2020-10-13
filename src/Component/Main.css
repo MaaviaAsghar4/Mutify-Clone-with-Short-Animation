@@ -94,3 +94,9 @@
         height: 400px;
     }
 }
+
+@media (max-width: 450px) {
+    .head-img img{
+        width: 90%;
+    }
+}

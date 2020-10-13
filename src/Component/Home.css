@@ -1,3 +1,4 @@
 .background{
     background-image: linear-gradient(rgba(219,228,252,1), #dfdddd);
+    overflow-x: hidden;
 }

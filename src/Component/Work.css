@@ -10,12 +10,13 @@
     position: relative;
     padding-top: 70px;
     padding-bottom: 70px;
+    z-index: 2;
 }
 
 .appear{
     position: absolute;
     top: 130%;
-    right: -3%;
+    right: 0%;
 }
 
 .zoom{
@@ -144,5 +145,20 @@
     .magnifier{
         top: 0;
         width: 130px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .logos-container img{
+        width: 12%;
+    }
+
+    .work-content{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .work-content img{
+        width: 90%;
     }
 }

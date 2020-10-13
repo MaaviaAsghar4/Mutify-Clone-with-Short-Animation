@@ -40,3 +40,21 @@
     text-align: center;
     color: #282841;
 }
+
+@media (max-width: 450px) {
+    .mp-video video{
+        width: 90% !important;
+    }
+
+    .ctxt{
+        width: 300px !important;
+    }
+
+    .ctxt h1{
+        font-size: 1rem;
+    }
+
+    .ctxt p{
+        font-size: 0.7rem;
+    }
+}
