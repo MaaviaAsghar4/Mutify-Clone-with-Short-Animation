@@ -1,4 +1,5 @@
 import React from 'react';
+import useWebAnimations from "@wellyshen/use-web-animations";
 import './Work.css'
 import Appear from '../images/Appear.png'
 import Hangouts from '../images/Hangouts.png'
@@ -15,10 +16,36 @@ import magnifier from '../images/magnifier.png'
 import macbook from '../images/macbook.png'
 
 const Works = () => {
+    const { ref } = useWebAnimations({
+        keyframes: [
+            { transform: "translateY(0px)" },
+            { transform: "translateY(20px)" },
+            { transform: "translateY(0px)" },
+        ],
+        timing: {
+            duration: 10000,
+            iterations: Infinity,
+            easing: "ease-in-out"
+        }
+    });
+
+    const { btn } = useWebAnimations({
+        keyframes: [
+            { transform: "translateY(0px)" },
+            { transform: "translateY(120px)" },
+            { transform: "translateY(0px)" },
+        ],
+        timing: {
+            duration: 50,
+            iterations: Infinity,
+            easing: "ease-in-out"
+        }
+    });
+
     return (
         <div id={'main-work'} className='work-container'>
-            <div className='logos-container'>
-                <img className='appear'  src={Appear} alt='' />
+            <div className='logos-container' ref={ref}>
+                <img className='appear' src={Appear} alt='' />
                 <img className='zoom' src={zoom} alt='' />
                 <img className='hangout' src={Hangouts} alt='' />
                 <img className='messenger' src={Messenger} alt='' />
@@ -38,7 +65,7 @@ const Works = () => {
             </div>
             <div className='work-use'>
                 <img src={macbook} alt='' />
-                <img className='magnifier' src={magnifier} alt='' />
+                <img ref={btn} className='magnifier' src={magnifier} alt='' />
             </div>
             <div className='work-context'>
                 <p>Use a shortcut or the touch bar on any Mac device</p>
