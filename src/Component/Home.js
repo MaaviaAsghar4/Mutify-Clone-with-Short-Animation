@@ -4,6 +4,8 @@ import Navbar from './Navbar'
 import Works from './Works'
 import Noise from './Noise'
 import './Home.css'
+import Switch from './Switch'
+import Feedback from './Feedback'
 
 const Home = () => {
     return (
@@ -12,6 +14,8 @@ const Home = () => {
             <Main />
             <Works />
             <Noise />
+            <Switch />
+            <Feedback />
         </div>
     )
 }

@@ -39,6 +39,7 @@
     background: linear-gradient(180deg,#359cff,#0037d2);
     width: 250px;
     height: 50px;
+    cursor: pointer;
 }
 
 .buy{
@@ -51,7 +52,8 @@
     border-radius: 0.3rem;
     background: linear-gradient(180deg,#fff,#fff 46%,#f3f3f3);
     width: 250px;
-    height: 50px;   
+    height: 50px;
+    cursor: pointer;   
 }
 
 .head-img {

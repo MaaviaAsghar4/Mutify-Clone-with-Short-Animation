@@ -1,0 +1,42 @@
+.fb-context{
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 0.8rem;
+    padding-left: 30px;
+}
+
+.feedback{
+    overflow: hidden;
+}
+
+.ctxt h1{
+    color: #282841;
+}
+
+.ctxt p{
+    color: rgba(40,40,65,.7);
+    font-size: 1rem;
+}
+
+.fb-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fb-logo img{
+    margin-right: 20px;
+}
+
+.fb-logo span{
+    font-weight: bold;
+}
+
+.fb-footer{
+    text-align: center;
+    color: #282841;
+}

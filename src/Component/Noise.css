@@ -1,28 +1,119 @@
 .img-block{
-    margin-top: 50px !important;
     display: flex;
+    margin-top: 60px !important;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-    border: 2px solid rgba(16, 30, 57, 1);
-    border-radius: 1rem;
-    background-color: rgba(16, 30, 57, 1);
+    background-color: rgb(11,25,58);
+    color: #f7f7f7;
+    border-radius: 0.8rem;
+    padding-left: 80px;
 }
 
 .img-context{
-    width: 130%;
-    padding: 0px 30px;
-    color: white;
+    width: 300px;
+    font-weight: bold;
 }
 
+.img-context h1{
+    font-size: 2.5rem;
+}
 
 .img-context p{
-    line-height: 2;
-    color: hsl(223deg, 13%, 79%) !important;
-    font-size: 1.2rem;
+    line-height: 1.67;
+    font-size: 1.6rem;
+}
+
+.btn-try{
+    color: black;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    background: linear-gradient(180deg,#fff,#fff 46%,#f3f3f3);
+    width: 250px;
+    height: 50px; 
+    cursor: pointer; 
+}
+
+.img-wave{
+    width: 700px;
+    text-align: center;
 }
 
 .img-wave img{
-    margin-left: 40px;
+    height: 700px;
+}
+
+@media (max-width: 1054px) {
+    .img-wave img{
+        height: 600px;
+    }
+}
+
+@media (max-width: 950px) {
+    .img-wave img{
+        height: 500px;
+    }
+}
+
+@media (max-width: 880px) {
+    .img-wave img{
+        height: 400px;
+    }
+
+    .img-context h1{
+        font-size: 2.2rem;
+    }
+    
+    .img-context p{
+        line-height: 1.67;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-block{
+        padding-left: 50px;
+    }
+
+    .img-wave img{
+        height: 350px;
+    }
+
+    .img-context h1{
+        font-size: 2rem;
+    }
+    
+    .img-context p{
+        line-height: 1.67;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .img-block{
+        padding-left: 0px;
+        flex-direction: column;
+        padding-top: 20px;
+        margin-bottom: 0 !important;
+    }
+
+    .btn-try{
+        width: 100%;
+    }
+
+    .img-wave img{
+        height: 400px;
+    }
+
+    .img-context h1{
+        font-size: 1.8rem;
+    }
+    
+    .img-context p{
+        line-height: 1.67;
+        font-size: 1rem;
+    }
 }

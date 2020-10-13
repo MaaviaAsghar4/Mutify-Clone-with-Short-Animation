@@ -1,18 +1,23 @@
 .nav-container{
-    padding: 25px 20px;
+    position: sticky;
+    top: 0;
+    background-color: rgba(218,228,252,1);
+    z-index: 2;
 }
 
-.nav-container nav{
+nav{
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
     font-weight: bold;
 }
 
 .nav-logo{
-    margin-left: 10px;
     display: flex;
     align-items: center;
+    margin-left: 50px;
 }
 
 .nav-logo p{
@@ -20,14 +25,19 @@
     font-weight: bold;
 }
 
-.nav-links a{
+.nav-links ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li a{
     text-decoration: none;
     color: rgba(40,40,65,.7);
     margin-right: 25px;
 }
 
 .nav-download {
-    margin-right: 30px;
+    margin-right: 90px;
 }
 
 .nav-download a {
@@ -43,57 +53,19 @@
 
 .hamburger {display: none;}
 
-@media (max-width: 870px) {
-    .nav-download{
-        display: none;
+@media (max-width: 900px) {
+    .nav-links li a{
+        text-decoration: none;
+        color: rgba(40,40,65,.7);
+        margin-right: 10px;
     }
+}
 
-    .nav-container{
-        position: relative;
-    }
-    .nav-links{position: absolute;}
-
-    .nav-links{
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        padding: 20px 30px;
-        width: 100%;
-        height: 100vh;
-        background: white;
-        clip-path: circle(100px at 90% -20%);
-        -webkit-clip-path: circle(100px at 90% -20%);
-        pointer-events: none;
-        padding-top: 150px;
-        z-index: 2;
-    }
-
-    .nav-links.open{
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
-        z-index: 2;
-    }
-
-    .nav-links a{
-        display: block;
-        margin-top: 25px;
-        font-size: 1.6rem;
-        font-weight: lighter;
-        z-index: 2;
-    }
-
-    #privacy{
-        display: block;
-    }
-
-    nav{
-        justify-content: space-between !important;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
+@media (max-width: 800px) {
     .hamburger{
+        position: absolute;
+        top: 40px;
+        right: 10%;
         cursor: pointer;
         display: block;
         z-index: 2;
@@ -104,5 +76,42 @@
         height: 5px;
         background-color: black;
         margin-top: 5px;
+        border-radius: 0.3rem;
+    }
+
+    #privacy{
+        display: block;
+    }
+
+    nav{
+        flex-direction: column;
+        justify-content: space-between !important;
+        margin-right: 30px;
+        align-items: flex-start;
+    }
+
+    .nav-download{
+        display: none;
+    }
+
+    .nav-links{
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li{
+        padding-top: 40px;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: lighter;
+    }
+
+    .nav-links.open{
+        display: flex;
     }
 }

@@ -112,6 +112,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    background-image: url('../images/wave1.svg');
+    background-position: left;
+    background-size: cover;
 }
 
 .work-use img{
@@ -129,10 +132,10 @@
 
 .work-context{
     margin-top: 40px;
+    text-align: center;
 }
 
 .work-context p{
-    text-align: center;
     color: rgba(40,40,65,.7);
     font-size: 1.2rem;
 }
